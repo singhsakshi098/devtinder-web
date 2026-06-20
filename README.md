@@ -12,7 +12,14 @@
 -created a login page first
 -Installed axios
 -CORS => installed cord in backend = add -middleware to with configurations: origin ,credentials: true
--Whenever u r making an APU call so pass =>  {withCredentials:true}; if not pass => it will not send the token back
+-Whenever u r making an APU call so pass =>  {withCredentials:true}; if not pass => it will not send the token back;
+-installed redux- Toolkit using docuentation :> created a -> configureStore => Provider in app.js => createSlice => ad reducer to store;
+
+-Login and see if your data is coming properly in the store
+-navbar should  update as soon as user logs in
+-refactor our code to add constants file +created a constants folder to looknour code much cleaner
+
+
 
 
 
