@@ -8,6 +8,13 @@
 -created a navbar.jsx seperate component file
 -Install react router dom
 -Created BrowserRouter > Routes > Route =/ Body > Routechildren
+-created a footer 
+-created a login page first
+-Installed axios
+-CORS => installed cord in backend = add -middleware to with configurations: origin ,credentials: true
+-Whenever u r making an APU call so pass =>  {withCredentials:true}; if not pass => it will not send the token back
+
+
 
 
 
