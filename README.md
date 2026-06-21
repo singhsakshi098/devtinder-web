@@ -17,7 +17,10 @@
 
 -Login and see if your data is coming properly in the store
 -navbar should  update as soon as user logs in
--refactor our code to add constants file +created a constants folder to looknour code much cleaner
+-refactor our code to add constants file +created a constants folder to looknour code much cleaner;
+-you should not to be acess other routes without login
+-if token is not present ,redirect user to login page
+-Builded Logout feature
 
 
 
