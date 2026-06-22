@@ -22,7 +22,13 @@
 -if token is not present ,redirect user to login page
 -Builded Logout feature
 -Get the feed and add the feed in the store
--buold the user card on feed
+-build the user card on feed
+-added edit pprofile feature
+-show toast message on save of profile
+-new page- see all my connections
+-new page - see all my connection request
+-Feature : accept and reject connnection request.
+
 
 
 
