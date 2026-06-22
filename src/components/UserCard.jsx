@@ -1,14 +1,17 @@
 const UserCard = ({ user }) => {
   const { firstName, lastName, photoUrl, age, gender, about } = user;
-
+console.log(user);
   return (
     <div className="card w-96 bg-base-200 shadow-2xl rounded-2xl border border-base-300">
       <figure className="h-96">
-        <img
-          src={photoUrl || "https://randomuser.me/api/portraits/women/44.jpg"}
-          alt="Profile"
-          className="w-full h-full object-cover"
-        />
+       {photoUrl && (
+   <img
+  src={photoUrl}
+  alt="Profile"
+  className="w-full h-full object-cover"
+  referrerPolicy="no-referrer"
+/>
+)}
       </figure>
 
       <div className="card-body">

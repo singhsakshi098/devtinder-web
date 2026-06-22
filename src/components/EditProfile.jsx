@@ -4,15 +4,18 @@ import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 import { BASE_URL } from "../utils/constants";
 import UserCard from "./UserCard";
+import {  useSelector } from "react-redux";
 
 const EditProfile = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [photoUrl, setPhotoUrl] = useState("");
-  const [age, setAge] = useState("");
-  const [gender, setGender] = useState("");
-  const [about, setAbout] = useState("");
-  const [skills, setSkills] = useState("");
+  const user = useSelector((store) => store.user);  // ← add
+
+  const [firstName, setFirstName] = useState(user?.firstName || "");   // ← change
+  const [lastName, setLastName] = useState(user?.lastName || "");      // ← change
+  const [photoUrl, setPhotoUrl] = useState(user?.photoUrl || "");      // ← change
+  const [age, setAge] = useState(user?.age || "");                     // ← change
+  const [gender, setGender] = useState(user?.gender || "");            // ← change
+  const [about, setAbout] = useState(user?.about || "");               // ← change
+  const [skills, setSkills] = useState(user?.skills || "");            // ← change
   const [error, setError] = useState("");
   const [showToast, setShowToast] = useState(false);
 

@@ -10,12 +10,14 @@ const Feed = () => {
   const feed = useSelector((store) => store.feed);
   console.log(feed);
   const dispatch = useDispatch()
+  
 
   const getFeed = async () => {
     if(feed) return;
     
     try{const res = await axios.get(BASE_URL + "/user/feed" , 
       {withCredentials: true});
+      console.log("Feed Response:", res.data);
     dispatch(addFeed(res.data));}
     catch (err) {
       //to do error
