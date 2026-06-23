@@ -28,6 +28,7 @@
 -new page- see all my connections
 -new page - see all my connection request
 -Feature : accept and reject connnection request.
+-send-ignore connection request on feed built
 
 
 
