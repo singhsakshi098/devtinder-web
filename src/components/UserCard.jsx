@@ -28,10 +28,13 @@ console.log(user);
       <figure className="h-96">
        {photoUrl && (
    <img
-  src={photoUrl}
+  src={photoUrl || "https://cdn-icons-png.flaticon.com/512/149/149071.png"}
   alt="Profile"
-  className="w-full h-full object-cover"
-  referrerPolicy="no-referrer"
+  className="h-full w-full object-cover"
+  onError={(e) => {
+    e.target.src =
+      "https://cdn-icons-png.flaticon.com/512/149/149071.png";
+  }}
 />
 )}
       </figure>
